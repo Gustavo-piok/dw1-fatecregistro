@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+
+<body>
+    <h1>Tabelas no HTML5:</h1>
+    <!-- Estrutura minima de uma tabela -->
+    <table border="1">
+        <tr>
+            <td>dado 1</td>
+            <td>dado 2</td>
+            <td>dado 3</td>
+        </tr>
+        <tr>
+            <td>dado 4</td>
+            <td>dado 5</td>
+            <td>dado 6</td>
+        </tr>
+    </table>
+    <!-- br:break line(quebra de linha) -->
+    <br><br><br>
+    <!-- Exemplo de tabela completa (com mesclagem) -->
+    <table border="1">
+        <caption>Vendas do mês</caption>
+        <thead>
+            <tr>
+                <th>produto</th>
+                <th>Quantidade</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <!-- corpo da tabela -->
+        <tbody>
+            <!-- linha 1 -->
+            <tr>
+                <td rowspan="2">mouse</td>
+                <td>10</td>
+                <td>R$ 500,00</td>
+            </tr>
+            <!-- linha 2 -->
+            <tr>
+                <td>20</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th colspan="2">Total:</th>
+            <td>R$ 1.500,00</td>
+        </tfoot>
+    </table>
+    <br><br><br>
+
+    <!-- Tabela completa com o atributo "scope" -->
+    <table border="1">
+        <caption>Notas dos alunos por disciplinas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Alunos</th>
+                <th scope="col">Matemática</th>
+                <th scope="col">Portugês</th>
+                <th scope="col">História</th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- linha 1 -->
+                <th scope="row">Ana</th>
+                <td>8.5</td>
+                <td>9.0</td>
+                <td>7.5</td>
+            </tr>
+
+            <tr>
+                <!-- linha 2 -->
+                <th scope="row">Bruno</th>
+                <td>9.5</td>
+                <td>10.0</td>
+                <td>8.5</td>
+            </tr>
+            <tr>
+                <!-- linha 1 -->
+                <th scope="row">Carlos</th>
+                <td>9.0</td>
+                <td>8.5</td>
+                <td>8.0</td>
+            </tr>
+        </tbody>
+
+
+
+    </table>
+
+</body>
+
+</html>
