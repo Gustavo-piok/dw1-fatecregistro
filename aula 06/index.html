@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <h1>Formulários no HTML5</h1>
+    <form action="#" method="post">
+        <label for="nome">nome:</label><br>
+        <!-- input text -->
+        <input name="nome" type="text" id="nome" placeholder="insira o seu nome"><br><br>
+        <label for="email">email:</label><br>
+        <!-- input email -->
+        <input name="email" type="email" id="email" placeholder="insira o email">
+        <br><br>
+        <label for="senha">senha:</label><br>
+        <!-- input senha -->
+        <input name="senha" type="password" id="senha" placeholder="insira a sua senha">
+        <br><br>
+        <!-- botão de submeter o formulário -->
+         <input type="submit" value="cadastrar">
+         <!-- botão de limpar o formulario -->
+          &nbsp;&nbsp;&nbsp;<input type="reset" value="limpar">
+    <br><br>
+    <hr>
+    <h4>Outros inputs:</h4>
+    <form>
+        <label>Quantidade</label><br>
+        <!-- input de numeros -->
+        <input type="number" min="0" max="10"><br>
+        <!-- input de data -->
+        <label>Data:</label><br>
+        <input type="date"><br>
+        <!-- input de arquivos -->
+        <input type="file"><br>
+        <!-- campo de texto longo (textarea) -->
+        <label>comentario</label><br>
+        <textarea rows="5" cols="40"></textarea><br>
+        <!-- campo invisivel -->
+        <input type="hidden" name="idProduto" value="9"><br>
+        <!-- caixa de seleção -->
+        <label>Cursos:</label><br>
+        <select name="cursos">
+            <option value="1">programação</option>
+            <option value="2">design</option>
+            <option value="3">musica</option>
+            <option value="4">enfermagem</option>
+        </select>
+    </form>
+    <br><br>
+    <hr>
+    <h2>Exemplo de formulário completo</h2>
+    <!-- formulario completo -->
+     <h4>Cadastro do usuário</h4>
+     <form action="#" method="post">
+        <fieldset>
+            <legend>dados pessoais:</legend>
+            <label for="name">nome:</label>
+            <input type="text" placeholder="insira seu nome" id="name" name="name"><br>
+            <label for="nascimento">data de nascimento:</label>
+            <input type="date"><br>
+            <label for="sexo">Sexo:</label>
+            <!-- radio buttons -->
+             <input type="radio" name="sexo">masculino
+             <input type="radio" name="sexo">feminino
+        </fieldset>
+        <fieldset>
+            <legend>dados de endereço:</legend>
+        </fieldset>
+     </form>
+</body>
+
+</html>
