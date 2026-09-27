@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Cadastro de Aluno</title>
+  </head>
+  <body>
+    <h1>Cadastro de Aluno - DSM</h1>
+    <p>
+      Esta pagina é um cadastro para aluno na faculdade FATEC do curso de DSM
+    </p>
+    <br /><br />
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="nome">nome:</label><br />
+        <input
+          name="nome"
+          type="text"
+          id="nome"
+          placeholder="Insira o seu nome"
+          required
+        />
+        <br /><br />
+        <label for="email">Email:</label><br />
+        <input
+          name="email"
+          type="email"
+          id="email"
+          placeholder="Insira o seu email"
+          required
+        /><br /><br />
+        <label for="data">Data de nascimento:</label><br />
+        <input name="data" type="date" id="data" />
+      </fieldset>
+      <br /><br /><br />
+      <fieldset>
+        <legend>Dados Acadêmicos</legend>
+        <label name="cursos">
+          <select>
+            <option value="1">DSM</option>
+            <option value="2">ADS</option>
+            <option value="3">Outro</option>
+          </select>
+          <br><br> 
+          <label for="periodo">periodo:</label><br>
+          <input type="radio" name="periodo">Manhã
+          <input type="radio" name="periodo">Noite  
+             <br><br>
+             <label for="comentario">observações</label><br><br> 
+             <textarea name="comentario" id="comentario" rows="5" cols="15"></textarea>
+      </fieldset>
+      <br><br>
+        <input type="submit" value="Enviar">
+        &nbsp;&nbsp;&nbsp;
+        <input type="reset" value="limpar">
+    </form>
+  </body>
+</html>
