@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    height: 250px;
+    padding: 20px;
+    background-color: black;
+    margin: 10px;
+}
+
+.card {
+    background-color: aqua;
+    padding: 20px;
+    margin: 5px;
+    color: black;
+}
+.row-center {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.column-left {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.row-space-between {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

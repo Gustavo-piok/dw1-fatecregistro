@@ -1,0 +1,24 @@
+div.container {
+    display: flex;
+    /* flex-direction: column; */
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: black;
+    padding: 20px;
+    height: 300px;
+    /*  Posições:
+    left: esquerda
+    right: direita
+    flex-start: superior
+    flex-end: inferior */
+}
+
+div.card {
+    background-color: bisque;
+    color: blue;
+    padding: 20px;
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+}
